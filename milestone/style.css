@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Sevillana&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", system-ui;
+}
+section{
+    padding: 10rem 3rem;
+}
+
+:root{
+    --bg-color:#34495e;
+    --text-color: #333;
+    --hover-bg-color: #95a5a6;
+    --headingFonts : 3.5rem;
+    --headingWeight : 700;
+    --textFonts : 1.8rem;
+    --max-width : 1380px;
+}
+body,
+html{
+    scroll-behavior: smooth;
+    background: #fff;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    
+}
+.left_side{
+    width: 40%;
+    background-color:#dedee2;
+    border: 1px solid #0e0808;
+    min-height: 930px;
+}
+.left_side .profile_img{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+    flex-direction: column;
+}
+.left_side .profile_img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #EFEEF3;
+}
+.certificate h4{
+    margin-top: 40px;
+    padding: 10px 29px;
+    margin-inline: 20px;
+    background: #9b9393;
+    display: inline-block;
+    border-radius: 21px;
+    font-family: cursive;
+}
+.certificate-content{
+    margin: 20px 10px;
+}
+.certificate-content p{
+    font-size: .9rem;
+    margin-top: 20px;
+    font-family: cursive;
+}
+.languages-content {
+    margin: 78px 10px;
+}
+.languages-content p{
+    font-family: cursive;
+}
+.right_side{
+    width: 58%;
+    background-color: #ffff;
+    border: 1px solid #0e0808;
+    max-width: var(--max-width);
+    min-height: 930px;
+
+}
+.right_side h3{
+ text-align: center;   
+ font-family: cursive;
+ background: 2px rgb(218, 215, 213);
+ font-size: 1.2rem;
+ padding-top: 1rem;
+}
+.personal_info h4{
+    margin-top: 10px;
+    padding: 10px 12px;
+    margin-inline: 20px;
+    background: #9b9393;
+    display: inline-block;
+    border-radius: 21px;
+    font-family: cursive;
+}
+.personal-info-content{
+    margin: 20px 10px;
+    /* word-break: break-all; */
+    word-wrap: break-word;
+}
+.personal-info-content p{
+    font-family: cursive;
+    font-size: 1rem;
+    display: block
+}
+.education h4{
+    margin-top: 10px;
+    padding: 10px 12px;
+    margin-inline: 20px;
+    background: #9b9393;
+    display: inline-block;
+    border-radius: 21px;
+    font-family: cursive;
+}
+.education-content{
+    margin: 20px 10px;
+}
+.education-content p{
+    font-family: cursive;
+    font-size: 1rem;
+    display: block
+}
+.skill-content{
+    margin: 20px 10px;
+}
+.skill-content li{
+    font-family: cursive;
+    font-size: 1rem;
+}
+.work_experience-content{
+    margin: 20px 10px;
+}
+.work_experience-content li{
+    font-family: cursive;
+}
+.toggle{
+    display: none;
+}
+.toggle.show{
+    display:block;
+}
+button{
+    padding: 12px 13px;
+    background: ghostwhite;
+    border-radius: 20px;
+    border: none;
+    outline: 1px solid black;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+@media(width > 768px){
+    .right_side{
+        width: 40%;
+    }   
+    .left_side{
+        width: 20%;
+    }
+}
+
+@media (width < 540px){
+    .personal_info h4{
+        margin-top: 5px;
+        padding: 10px 0px;
+         margin-inline: 5px;
+
+    }
+    .personal-info-content{
+        margin: 10px 0px;
+    }
+    .personal-info-content p{
+        font-size: 1rem;
+     
+    }
+    .education h4{
+        margin-top: 5px;
+        padding: 10px 7px;
+        margin-inline: 10px;
+    }
+    .education-content p{
+        font-size: 1rem;
+    }   
+    .skill-content li{
+        font-size: 1rem;
+    }
+    .work_experience-content li{
+        font-size: 1rem;
+    }
+    .certificate-content p{
+        font-size:1rem;
+        margin-inline: 40px;
+    }
+    .languages-content p{
+        font-size:1rem;
+        margin-inline: 40px;
+    }
+    aside{
+        padding: 0 1rem;
+    }
+    button{
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    
+}
